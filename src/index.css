@@ -1,14 +1,23 @@
-@import url('https://fonts.googleapis.com/css?family=Cinzel|Jost&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One|Jost&display=swap');
+
 div#root {
-	background-image: url("./leather.jpg");
-	background-repeat: repeat;
-	background-size: 200px 200px;
-	filter: grayscale(100%) opacity(25%);
+	position: relative;
+	height: 100%;
+}
+
+div#root::before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
 	height: 100vh;
+	background-color: #ffdb71;
+	z-index: -1;
 }
 
 h1 {
-	font-family: 'Cinzel', serif;
+	font-family: 'Rubik Mono One', san-serif;
 }
 
 * {
@@ -41,6 +50,10 @@ div#interactive {
 
 div#take {
 	margin-top: 10px;
+	display: flex; 
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
 }
 
 div#take > * {
@@ -76,12 +89,18 @@ div#cases > *{
 	color: white;
 }
 
+#gameTitle {
+	color: #d02500;
+}
+
 #avail {
-	color: black;
+	color: #d02500;
 }
 
 #notAvail {
-	color: grey;
+	color: #640000;
+	text-decoration: line-through
+
 }
 
 ul#priceDisplay{

@@ -172,7 +172,7 @@ class Board extends React.Component {
 			<div id="body">
 				<div id="interactive">
 					<div id="alignDisplay">
-					<h1>Deal or No Deal!</h1>
+					<h1 id="gameTitle">Deal or No Deal!</h1>
 						<p id="deal">
 						{curDeal}
 						</p>
