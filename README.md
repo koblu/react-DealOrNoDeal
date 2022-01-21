@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+#Deal Or No Deal React App
+
+A basic project I wrote in 2020 to get familiar with React.
+
 ## Available Scripts
 
 In the project directory, you can run:
